@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .crousel{
+        width: 45rem;
+        height: 25rem;
+        border-radius: 1rem;
+        overflow-x: auto;
+        overflow: hidden;
+    }
+
+    .crousel{
+        display: flex;
+    }
+
+    .crousel > img{
+        flex:  0 0 100%;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .crousel{
+        position: relative;
+    }
+
+    .crousel > img {
+        position: sticky;
+        left: 0;
+    }
+
+    .crousel{
+        scroll-snap-type: x mandatory;
+
+    }
+
+    .crousel > img{
+        scroll-snap-align: start;
+    }
+</style>
+<body>
+    <div class="crousel">
+        <img src="https://img.freepik.com/free-photo/banking-saving-money-management-account-concept_53876-124787.jpg?t=st=1724860258~exp=1724863858~hmac=943a1c6ed2301941d1f3d1403eacd4317fb757cd24cd89743b7862d498e932ef&w=740" alt="">
+    
+    <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-sunset-surrounded-by-grass_181624-22807.jpg?uid=R138287787&ga=GA1.1.788748522.1720059178&semt=ais_hybrid" alt="">
+    <img src="https://img.freepik.com/free-photo/beautiful-butterfly-nature_23-2150445606.jpg?uid=R138287787&ga=GA1.1.788748522.1720059178&semt=ais_hybrid" alt="">
+    <img src="https://img.freepik.com/free-photo/photorealistic-view-tree-nature-with-branches-trunk_23-2151478102.jpg?uid=R138287787&ga=GA1.1.788748522.1720059178&semt=ais_hybrid" alt="">
+    </div>
+</body>
+</html>
